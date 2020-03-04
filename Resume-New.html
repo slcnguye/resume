@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css">
 <!--    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">-->
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <style>
@@ -10,275 +10,364 @@
   margin: 0;
   padding: 0;
 }
-.mdl-demo .mdl-layout__header-row {
-  padding-left: 40px;
-}
-.mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
-  font-size: inherit;
-}
-.mdl-demo .mdl-layout__tab-bar-button {
-  display: none;
-}
-.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
-  display: none;
-}
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
-  overflow: visible;
-}
-.mdl-demo .mdl-layout__tab-bar-container {
-  height: 64px;
-}
-.mdl-demo .mdl-layout__tab-bar {
-  padding: 0;
-  padding-left: 16px;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
-  height: 64px;
-  line-height: 64px;
-}
-.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
-  height: 4px;
-}
-.mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
-}
-.mdl-demo .mdl-card {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.mdl-demo .mdl-card > * {
-  height: auto;
-}
-.mdl-demo .mdl-card .mdl-card__supporting-text {
-  margin: 40px;
-  flex-grow: 1;
-  padding: 0;
-  color: inherit;
-  width: calc(100% - 80px);
-}
-.mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.mdl-demo .mdl-card__actions {
-  margin: 0;
-  padding: 4px 40px;
-  color: inherit;
-}
-.mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
-  margin: 0;
-}
-.mdl-demo .mdl-card__actions a:hover,
-.mdl-demo .mdl-card__actions a:active {
-  color: inherit;
-  background-color: transparent;
-}
-.mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-}
-.mdl-demo #add {
-  position: absolute;
-  right: 40px;
-  top: 36px;
-  z-index: 999;
-}
+    .mdl-demo .mdl-layout__header-row {
+      padding-left: 40px;
+    }
+    .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+      font-size: inherit;
+    }
 
-.mdl-demo .mdl-layout__content section:not(:last-of-type) {
-  position: relative;
-  margin-bottom: 48px;
-}
-.mdl-demo section.section--center {
-  max-width: 860px;
-}
-.mdl-demo #features section.section--center {
-  max-width: 620px;
-}
-.mdl-demo section > header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mdl-demo section > .section__play-btn {
-  min-height: 200px;
-}
-.mdl-demo section > header > .material-icons {
-  font-size: 3rem;
-}
-.mdl-demo section > button {
-  position: absolute;
-  z-index: 99;
-  top: 8px;
-  right: 8px;
-}
-.mdl-demo section .section__circle {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 0;
-  flex-shrink: 1;
-}
-.mdl-demo section .section__text {
-  flex-grow: 1;
-  flex-shrink: 0;
-  padding-top: 8px;
-}
-.mdl-demo section .section__text h5 {
-  font-size: inherit;
-  margin: 0;
-  margin-bottom: 0.5em;
-}
-.mdl-demo section .section__text a {
-  text-decoration: none;
-}
-.mdl-demo section .section__circle-container > .section__circle-container__circle {
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
-  margin: 8px 0;
-}
-.mdl-demo section.section--footer .section__circle--big {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  margin: 8px 32px;
-}
-.mdl-demo .is-small-screen section.section--footer .section__circle--big {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  margin: 8px 16px;
-}
-.mdl-demo section.section--footer {
-  padding: 64px 0;
-  margin: 0 -8px -8px -8px;
-}
-.mdl-demo section.section--center .section__text:not(:last-child) {
-  border-bottom: 1px solid rgba(0,0,0,.13);
-}
-.mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
-  margin-bottom: 24px;
-}
-.mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
-}
-.mdl-demo #features section {
-  margin-bottom: 72px;
-}
-.mdl-demo #features h4, #features h5 {
-  margin-bottom: 16px;
-}
-.mdl-demo .toc {
-  border-left: 4px solid #C1EEF4;
-  margin: 24px;
-  padding: 0;
-  padding-left: 8px;
-  display: flex;
-  flex-direction: column;
-}
-.mdl-demo .toc h4 {
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-.mdl-demo .toc a {
-  color: #4DD0E1;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
-}
-.mdl-demo .mdl-menu__container {
-  z-index: 99;
-}
+    .mdl-demo main > .mdl-layout__tab-panel {
+        padding: 16px 8px 8px;
+    }
+    .mdl-demo .mdl-card {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .mdl-demo .mdl-card > * {
+      height: auto;
+    }
+    .mdl-demo .mdl-card .mdl-card__supporting-text {
+      margin: 40px;
+      flex-grow: 1;
+      padding: 0;
+      color: inherit;
+      width: calc(100% - 80px);
+    }
+    .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
 
-    </style>
+    .mdl-demo .mdl-card__actions a {
+      color: #00BCD4;
+      margin: 0;
+    }
+    .mdl-demo .mdl-card__actions a:hover,
+    .mdl-demo .mdl-card__actions a:active {
+      color: inherit;
+      background-color: transparent;
+    }
+
+    .mdl-demo .mdl-layout__content section:not(:last-of-type) {
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .mdl-demo section > header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mdl-demo section > button {
+      position: absolute;
+      z-index: 99;
+      top: 8px;
+      right: 8px;
+    }
+    .mdl-demo section .section__text {
+      flex-grow: 1;
+      flex-shrink: 0;
+      padding-top: 8px;
+    }
+    .mdl-demo section .section__text h5 {
+      font-size: inherit;
+      margin: 0;
+      margin-bottom: 0.5em;
+    }
+    .mdl-demo section .section__text a {
+      text-decoration: none;
+    }
+    .mdl-demo section .section__circle-container > .section__circle-container__circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+      margin: 8px 0;
+    }
+    .mdl-demo section.section--center .section__text:not(:last-child) {
+      border-bottom: 1px solid rgba(0,0,0,.13);
+    }
+    .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
+      margin-bottom: 24px;
+    }
+    .mdl-demo .mdl-layout__tab-panel:not(#overview) {
+      background-color: white;
+    }
+
+    .date {
+        text-align: right;
+    }
+
+    .info-description {
+        margin: 0;
+    }
+
+    .info-section {
+        margin-bottom: 8px;
+    }
+</style>
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-            <div class="mdl-layout mdl-layout__header-row" style="margin: 15px;">
-                <div class="mdl-typography--display-1"><strong>SANG</strong> NGUYEN</div>
-            </div>
-            <div class="mdl-layout mdl-layout__header-row mdl-color--white">
-                <div class="mdl-cell mdl-cell--4-col">
-                    <span class="mdl-chip mdl-chip--contact">
-                        <span class="mdl-chip__contact mdl-color--accent mdl-color-text--white material-icons">email</span>
-                        <a class="mdl-chip__text" href="mailto:slcnguye@gmail.com">slcnguye@gmail.com</a>
-                    </span>
-                </div>
-                <div class="mdl-cell mdl-cell--4-col">
-                    <span class="mdl-chip mdl-chip--contact">
-                        <strong class="mdl-chip__contact mdl-color--accent mdl-color-text--white">in</strong>
-                        <a class="mdl-chip__text" href="http://ca.linkedin.com/in/slcnguye" target="_blank">linkedin.com/in/slcnguye</a>
-                    </span>
-                </div>
-                <div class="mdl-cell mdl-cell--4-col">
-                    <span class="mdl-chip mdl-chip--contact">
-                        <span class="mdl-chip__contact mdl-color--accent mdl-color-text--white material-icons">code</span>
-                        <a class="mdl-chip__text" href="http://github.com/slcnguye"
-                           target="_blank">github.com/slcnguye</a>
-                    </span>
+            <div class="mdl-layout mdl-layout__header-row" style="margin: 15px; height: 85px;">
+                <div class="mdl-typography--display-2"><strong>SANG</strong> NGUYEN</div>
+                <div class="mdl-layout-spacer"></div>
+                <div>
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">email</i>
+                        </button>
+                        <a class="mdl-color-text--white" href="mailto:slcnguye@gmail.com">slcnguye@gmail.com</a>
+                    </div>
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">account_box</i>
+                        </button>
+                        <a class="mdl-color-text--white" href="http://ca.linkedin.com/in/slcnguye" target="_blank">linkedin.com/in/slcnguye</a>
+                    </div>
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">code</i>
+                        </button>
+                        <a class="mdl-color-text--white" href="http://ca.linkedin.com/in/slcnguye" target="_blank">github.com/slcnguye</a>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="mdl-layout__content">
             <div class="mdl-layout__tab-panel is-active" id="overview">
-                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                        <i class="material-icons">play_circle_filled</i>
-                    </header>
-                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                        <div class="mdl-card__supporting-text">
-                            <h4>Features</h4>
-                            Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                        </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--9-col">
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>
+                                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                                            <i class="material-icons">work</i>
+                                        </button>
+                                        Work Experience
+                                    </h4>
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>Tech Lead</b>
+                                            <ul class="info-description">
+                                                <li>Sharded a multi-tenant system at the application layer using an API gateway.</li>
+                                                <li>Built core libraries within WFM for messaging, authentication and security.</li>
+                                                <li>Developed a tenant migration service to automate and orchestrate migrations of tenants.</li>
+                                                <!--<li>Developed a tenant web app for support and developers to provide insight into production.</li>-->
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            <div>Ultimate Software Group Inc, Toronto, ON</div>
+                                            July 2019 - Current
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>Team Lead</b>
+                                            <ul class="info-description">
+                                                <li>Lead the development of WFM Scheduling and Reporting, full-stack customer-facing
+                                                    applications.
+                                                </li>
+                                                <li>Released Reporting within a one-month time frame from the beginning of development to
+                                                    production.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            <div>Ultimate Software Group Inc, Toronto, ON</div>
+                                            April 2017 - July 2019
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>Software Engineer</b>
+                                            <ul class="info-description">
+                                                <li>Core full-stack developer on 3 WFM products.</li>
+                                                <li>Converted 2 projects from AngularJS 1.3 to component-based design AngularJS 1.5.
+                                                </li>
+                                                <li>Created and maintained a shared AngularJS component library.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            <div>Ultimate Software Group Inc, Toronto, ON</div>
+                                            May 2015 - April 2017
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--9-col"><b>Software Engineer Intern</b>, Ultimate Software Group Inc, Weston, FL</div>
+                                        <div class="mdl-cell mdl-cell--3-col date">January 2014 - April 2015</div>
+                                    </div>
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--9-col"><b>Support Software Developer Intern</b>, NCR Canada Ltd, Waterloo, ON</div>
+                                        <div class="mdl-cell mdl-cell--3-col date">May 2013 - December 2013</div>
+                                    </div>
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--9-col"><b>Web Application Developer Intern</b>, Blue Coat Systems, Waterloo, ON</div>
+                                        <div class="mdl-cell mdl-cell--3-col date">January 2012 - December 2012</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+<!--                        <section class="section&#45;&#45;center mdl-grid mdl-grid&#45;&#45;no-spacing mdl-shadow&#45;&#45;2dp">-->
+<!--                            <header class="section__play-btn mdl-cell mdl-cell&#45;&#45;3-col-desktop mdl-cell&#45;&#45;2-col-tablet mdl-cell&#45;&#45;4-col-phone mdl-color&#45;&#45;teal-100 mdl-color-text&#45;&#45;white">-->
+<!--                                <i class="material-icons">play_circle_filled</i>-->
+<!--                            </header>-->
+<!--                            <div class="mdl-card mdl-cell mdl-cell&#45;&#45;9-col-desktop mdl-cell&#45;&#45;6-col-tablet mdl-cell&#45;&#45;4-col-phone">-->
+<!--                                <div class="mdl-card__supporting-text">-->
+<!--                                    <h4>Features</h4>-->
+<!--                                    Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                                <div class="mdl-card__supporting-text">
+                                    <h4 class="mdl-cell mdl-cell--12-col">
+                                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                                            <i class="material-icons">emoji_events</i>
+                                        </button>
+                                        Projects
+                                    </h4>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>find near me, Chrome extension</b>
+                                            <ul class="info-description">
+                                                <li>A <a
+                                                        href='https://chrome.google.com/webstore/detail/find-near-me/dmkpmdjanbkkbfpdhodojhedaoombopi'>Chrome
+                                                    extension</a> used to perform in-context Google Map searches.
+                                                </li>
+                                                <li>Search, explore or map places from any web page at the click of a button.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            April 2017
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>plusify, NPM package</b>
+                                            <ul class="info-description">
+                                                <li>Extension from dashify to convert any text to plus-case.</li>
+                                                <li>Available on <a href='https://www.npmjs.com/package/plusify'>npm</a> with 520 downloads.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            March 2017
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>US-Analytics, Ultimate Software 48-Hour Best Internal Tool Award</b>
+                                            <ul class="info-description">
+                                                <li>A javascript analytics library that gives the ability to track any sort of event. Similar to
+                                                    <a href="https://mixpanel.com/" target="_blank">mixpanel</a>.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            October 2014
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>UltiMatt, Ultimate Software 48-Hour Best Internal Tool Award</b>
+                                            <ul class="info-description">
+                                                <li>A problem-solving game for recruiting.</li>
+                                                <li>Players would modify editable sections of code to solve each level of the game.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            April 2014
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-grid mdl-grid--no-spacing info-section">
+                                        <div class="mdl-cell mdl-cell--8-col">
+                                            <b>PayPal Miami Battlehack</b>
+                                            <ul class="info-description">
+                                                <li>Developed a PayPal payment service with the use of OCR technology by scanning bills using
+                                                    mobile devices.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdl-cell mdl-cell--4-col date">
+                                            February 2014
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-                        <li class="mdl-menu__item">Lorem</li>
-                        <li class="mdl-menu__item" disabled>Ipsum</li>
-                        <li class="mdl-menu__item">Dolor</li>
-                    </ul>
-                </section>
-                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                            <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-cell mdl-cell--12-col mdl-typography--headline">
+                                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                                            <i class="material-icons">school</i>
+                                        </button>
+                                        Education
+                                    </div>
+                                    <div class="section__text mdl-cell mdl-cell--12-col info-section">
+                                        <strong>Bachelor of Computer Science</strong>, May 2015
+                                        <div>
+                                            Computer Science Honours, Co-operative Program Economics Minor with Distinction
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                        </section>
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-cell mdl-cell--12-col mdl-typography--headline">
+                                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                                            <i class="material-icons">grade</i>
+                                        </button>
+                                        Skills
+                                    </div>
+                                    <div class="section__text mdl-cell mdl-cell--12-col">
+                                        <div class="info-section">
+                                            <strong>Java</strong>
+                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="85" tabindex="0">
+                                        </div>
+
+                                        <div class="info-section">
+                                            <strong>MySQL</strong>
+                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="70" tabindex="0">
+                                        </div>
+
+                                        <div class="info-section">
+                                            <strong>RabbitMQ</strong>
+                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
+                                        </div>
+
+                                        <div class="info-section">
+                                            <strong>AngularJS</strong>
+                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
+                                        </div>
+
+                                        <div class="info-section">
+                                            <strong>Hibernate, Spring Boot, Liquibase</strong>
+                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
-                            </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                            </div>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
-                            </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                            </div>
-                        </div>
+                        </section>
                     </div>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-                        <li class="mdl-menu__item">Lorem</li>
-                        <li class="mdl-menu__item" disabled>Ipsum</li>
-                        <li class="mdl-menu__item">Dolor</li>
-                    </ul>
-                </section>
+
+                </div>
             </div>
         </main>
 </div>
