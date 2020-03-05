@@ -102,8 +102,8 @@
     }
 
     .info-section-2x {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     .icon-image {
@@ -115,7 +115,7 @@
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-            <div class="mdl-layout mdl-layout__header-row" style="margin: 15px; height: 85px;">
+            <div class="mdl-layout mdl-layout__header-row" style="margin: 20px; height: 85px; overflow: hidden;">
                 <div class="mdl-typography--display-2"><strong>SANG</strong> NGUYEN</div>
                 <div class="mdl-layout-spacer"></div>
                 <div>
@@ -143,7 +143,7 @@
         <main class="mdl-layout__content">
             <div class="mdl-layout__tab-panel is-active" id="overview">
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--9-col">
+                    <div class="mdl-cell mdl-cell--8-col">
                         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                             <div class="mdl-card mdl-cell mdl-cell--12-col">
                                 <div class="mdl-card__supporting-text">
@@ -158,8 +158,8 @@
                                         <div class="mdl-cell mdl-cell--9-col">
                                             <b>Tech Lead</b> Ultimate Software
                                             <ul class="info-description">
-                                                <li>Enabled horizontal scaling by implementing a multi-tenant sharding solution using an API gateway to support 1600 tenants.</li>
-                                                <li>Designed and implemented core libraries within WFM (Workforce Management) for messaging, authentication and security.</li>
+                                                <li>Enabled horizontal scaling by implementing a multi-tenant sharding solution using an API gateway to support 1600 tenants across 4 product services.</li>
+                                                <li>Designed and implemented core WFM (Workforce Management) libraries including messaging, authentication and security.</li>
                                                 <li>Developed a tenant migration service to automate and orchestrate migrations of tenants.</li>
                                                 <!--<li>Developed a tenant web app for support and developers to provide insight into production.</li>-->
                                             </ul>
@@ -190,7 +190,7 @@
                                             <ul class="info-description">
                                                 <li>Core full-stack developer on 3 WFM products.</li>
                                                 <li>Converted 2 projects from AngularJS 1.3 to component-based design AngularJS 1.5.</li>
-                                                <li>Created and maintained a shared AngularJS component library.</li>
+                                                <li>Contributed to a shared WFM AngularJS component library.</li>
                                             </ul>
                                         </div>
                                         <div class="mdl-cell mdl-cell--3-col date">
@@ -244,7 +244,7 @@
                                             <ul class="info-description">
                                                 <li>A <a
                                                         href='https://chrome.google.com/webstore/detail/find-near-me/dmkpmdjanbkkbfpdhodojhedaoombopi'>Chrome
-                                                    extension</a> used to perform in-context Google Map searches.
+                                                    extension</a> to perform in-context Google Map searches.
                                                 </li>
                                                 <li>Search, explore or map places from any web page at the click of a button.</li>
                                             </ul>
@@ -272,9 +272,7 @@
                                         <div class="mdl-cell mdl-cell--8-col">
                                             <b>US-Analytics</b> Ultimate Software 48-Hour Best Internal Tool Award
                                             <ul class="info-description">
-                                                <li>A javascript analytics library that gives the ability to track any sort of event. Similar to
-                                                    <a href="https://mixpanel.com/" target="_blank">mixpanel</a>.
-                                                </li>
+                                                <li>A javascript analytics library to track user interactions and flows.</li>
                                                 <li>Over 30 project were submitted during the hackathon.</li>
                                             </ul>
                                         </div>
@@ -287,8 +285,8 @@
                                         <div class="mdl-cell mdl-cell--8-col">
                                             <b>UltiMatt</b>  Ultimate Software 48-Hour Best Internal Tool Award
                                             <ul class="info-description">
-                                                <li>A problem-solving game for recruiting.</li>
-                                                <li>Players would modify editable sections of code to solve each level of the game.</li>
+                                                <li>Problem-solving game intended to be used as a recruitment tool.</li>
+                                                <li>Players would modify editable sections of code to solve each level.</li>
                                             </ul>
                                         </div>
                                         <div class="mdl-cell mdl-cell--4-col date">
@@ -300,9 +298,7 @@
                                         <div class="mdl-cell mdl-cell--8-col">
                                             <b>Battlehack</b> PayPal Hackathon
                                             <ul class="info-description">
-                                                <li>Developed a PayPal payment service with the use of OCR technology by scanning bills using
-                                                    mobile devices.
-                                                </li>
+                                                <li>Developed a payment service using OCR technology and a mobile device to scan bills.</li>
                                             </ul>
                                         </div>
                                         <div class="mdl-cell mdl-cell--4-col date">
@@ -313,7 +309,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col">
+                    <div class="mdl-cell mdl-cell--4-col">
                         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                             <div class="mdl-card mdl-cell mdl-cell--12-col">
                                 <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
@@ -345,7 +341,7 @@
                                 <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                                     <div class="mdl-cell mdl-cell--12-col mdl-typography--headline">
                                         <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-                                            <i class="material-icons">grade</i>
+                                            <i class="material-icons">important_devices</i>
                                         </button>
                                         Skills
                                     </div>
@@ -354,30 +350,31 @@
                                             <strong>Java</strong>
                                             <input class="mdl-slider mdl-js-slider" type="range" max="100" value="85" tabindex="0">
                                         </div>
-
                                         <div class="info-section-2x">
                                             <strong>MySQL</strong>
                                             <input class="mdl-slider mdl-js-slider" type="range" max="100" value="70" tabindex="0">
                                         </div>
-
                                         <div class="info-section-2x">
                                             <strong>RabbitMQ</strong>
                                             <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
                                         </div>
-
                                         <div class="info-section-2x">
                                             <strong>AngularJS</strong>
                                             <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
                                         </div>
 
                                         <div class="info-section-2x">
-                                            <strong>Hibernate, Spring Boot, Liquibase</strong>
-                                            <input class="mdl-slider mdl-js-slider" type="range" max="100" value="60" tabindex="0">
-                                        </div>
-
-                                        <div class="info-section-2x">
                                             <span class="mdl-chip mdl-color--primary">
                                                 <span class="mdl-chip__text mdl-color-text--white">Netflix OSS</span>
+                                            </span>
+                                            <span class="mdl-chip mdl-color--primary">
+                                                <span class="mdl-chip__text mdl-color-text--white">Hibernate</span>
+                                            </span>
+                                            <span class="mdl-chip mdl-color--primary">
+                                                <span class="mdl-chip__text mdl-color-text--white">Spring Boot</span>
+                                            </span>
+                                            <span class="mdl-chip mdl-color--primary">
+                                                <span class="mdl-chip__text mdl-color-text--white">Liquibase</span>
                                             </span>
                                             <span class="mdl-chip mdl-color--primary">
                                                 <span class="mdl-chip__text mdl-color-text--white">Grafana</span>
@@ -388,6 +385,58 @@
                                             <span class="mdl-chip mdl-color--primary">
                                                 <span class="mdl-chip__text mdl-color-text--white">Docker</span>
                                             </span>
+                                            <span class="mdl-chip mdl-color--primary">
+                                                <span class="mdl-chip__text mdl-color-text--white">PCF</span>
+                                            </span>
+                                            <span class="mdl-chip mdl-color--primary">
+                                                <span class="mdl-chip__text mdl-color-text--white">REST</span>
+                                            </span>
+<!--                                            <div class="mdl-grid mdl-grid&#45;&#45;no-spacing">-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Netflix OSS</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Hibernate</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Spring Boot</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="mdl-grid mdl-grid&#45;&#45;no-spacing">-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Liquibase</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Grafana</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Kibana</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="mdl-grid mdl-grid&#45;&#45;no-spacing">-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">Docker</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                                <div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+<!--                                                    <span class="mdl-chip mdl-color&#45;&#45;primary">-->
+<!--                                                        <span class="mdl-chip__text mdl-color-text&#45;&#45;white">PCF</span>-->
+<!--                                                    </span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
                                         </div>
                                     </div>
                                 </div>
